@@ -55,7 +55,29 @@ html {
     font-size: 1.2rem;
     font-weight: 400;
 }
-
+.navbar .list {
+    display: flex;
+}
+.navbar .list .logoutbutton{
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    z-index: 10000000000000000000000000000000000;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+.navbar .list .logoutbutton:hover {
+    letter-spacing: 3px;
+    background-color: var(--Tertiary);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
 /* .navbar .list {
     width: 40vw;
     display: flex;

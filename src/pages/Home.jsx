@@ -43,6 +43,7 @@ const Home = () => {
           ) : (
             // <Button word={"Explore"} disabled />
             <button className='homebutton' >
+              <ExploreIcon/>
               Explore
             </button>
           )}

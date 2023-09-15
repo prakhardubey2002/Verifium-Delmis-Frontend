@@ -9,6 +9,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Lottie from "lottie-react"
 import logox from '../Lottie animation/Navlogo.json'
+import Button from './Button';
 const Navbar = () => {
     const { isAddress, setIsAddress } = useGlobalContext();
     // const [publicKey, setPublicKey] = useState('');
@@ -67,7 +68,10 @@ const Navbar = () => {
         handleSubmit();
     }, [isAddress])
 
-
+    const logout=()=>{
+        setIsAddress("user")
+        toast("Wallet Logged out")
+    }
 
     const toggleVisibility = () => {
         setVisibility(!isVisible);
@@ -88,17 +92,20 @@ const Navbar = () => {
                 <Link to="/About">About us</Link>
                 <Link to="/Guide">Guide</Link>
                 <Link to="/Admin">Admin</Link> */}
-                { isAddress === "user" ? <div className="box" onClick={toggleVisibility} >
-                        <PhantomButton borderRadius="2rem" backgroundColor="#fff" color="black" setPublicKey={setIsAddress} />
-                    </div>
+                {isAddress === "user" ? <div className="box" onClick={toggleVisibility} >
+                    <PhantomButton borderRadius="2rem" backgroundColor="#fff" color="black" setPublicKey={setIsAddress} />
+                </div>
                     :
                     <div className="key-box" onClick={tos}  >
 
                         {isAddress.substring(0, 8)}...
                     </div>}
-               
+                {
+                    isAddress !== "user" ? <button className='logoutbutton' onClick={() => { logout() }} >Logout </button> : ""
+                }
 
-                
+
+
                 {/* {isVisible ?
                     <div className="box" onClick={toggleVisibility} >
                         <PhantomButton borderRadius="2rem" backgroundColor="#fff" color="black" setPublicKey={setIsAddress} />
