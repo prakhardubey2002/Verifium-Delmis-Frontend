@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
 *{
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: 'Lato','Poppins',sans-serif,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 html{
   scroll-behavior: smooth;
@@ -85,4 +84,113 @@ html{
 .home .buttonlink{
   text-decoration: none;
  
+}
+.user-container{
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: var(--Primary);
+  font-family: 'Poppins';
+}
+.user-container .sidebar{
+  width: 16vw;
+  height: 84vh;
+  max-width: 20vw;
+  background-color: var(--Quartenary);
+  margin: 1rem 0.5rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+ 
+}
+.user-container .sidebar .top .profilebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.user-container .sidebar .top .profilebox .head{
+  display: flex;
+  font-weight: 400;
+}
+.user-container .sidebar .top .profilebox p{
+  font-size: 12px;
+  color: #ccc;
+}
+.user-container .sidebar .top .profilebox img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 18rem;
+}
+.user-container .sidebar ul {
+  /* width: 90%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-container .sidebar ul  li{
+  list-style: none;
+width: 120%;
+  border-radius: 2rem;
+  margin: 0.2rem 0;
+  background-color: var(--Primaryx);
+  
+}
+.user-container .sidebar ul  li:active{
+
+}
+.user-container .sidebar ul  li a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem 0.5rem;
+  align-items: center;
+}
+.user-container .sidebar .bottom .help{
+  /* width: 90%; */
+  background-color: #222222;
+  border-radius: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem ;
+  position: relative;
+  border:2px solid  var(--Primaryx);
+}
+.user-container .sidebar .bottom .help .iconpos{
+  position: absolute;
+  top: -5%;
+  color: var(--Primaryx);
+  background-color: #222222;
+  border:2px solid  #fff;
+  border-radius: 2rem;
+  transform: scale(1.8);
+  /* margin: 1rem; */
+}
+.user-container .sidebar .bottom .help h2{
+  font-size: 20px;
+  font-weight: 400;
+}
+.user-container .sidebar .bottom .help p{
+  font-size: 10px;
+}
+.user-container .sidebar .bottom .help button{
+  padding: 8px 16px;
+  border-radius: 4rem;
+  margin: 1rem 0;
+  transition: 0.1s all ease-in-out;
+
+}
+.user-container .sidebar .bottom .help button:hover{
+  background-color: var(--Primaryx);
+  color: #fff;
+
 }

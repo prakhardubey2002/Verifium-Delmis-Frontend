@@ -6,6 +6,7 @@ import  Home  from './pages/Home';
 import Footer from './components/Footer';
 import User from './pages/User';
 import About from './pages/About';
+import { Dashboard } from '@mui/icons-material';
 
 function App() {
   return (
@@ -17,8 +18,10 @@ function App() {
           />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/user/:id' element={<User />} />
+            <Route path='/user/:id/*' element={<User />} />
+            <Route path='/Dashboard/:id' element={<Dashboard />} />
             <Route path='/about' element={<About />} />
+
             
             
           </Routes>
