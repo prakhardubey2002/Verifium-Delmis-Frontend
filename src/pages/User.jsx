@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet, Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import Timing from './Timing';
 import Credentials from './Credentials';
