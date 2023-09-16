@@ -247,6 +247,11 @@ html {
   color: #fccd3f;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
 }
+.dashboard .top h2 p{
+  font-size: 18px;
+  color: #ccc;
+  font-family: 200;
+}
 
 .dashboard .top .radarchart {
   width: 48%;
