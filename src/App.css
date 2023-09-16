@@ -357,6 +357,9 @@ html {
   border-radius: 2rem;
   font-size: 12px;
   margin: 0.4rem 0;
+  /* -webkit-box-shadow: 6px 10px 31px -1px rgba(0, 0, 0, 0.75); */
+  /* -moz-box-shadow: 6px 10px 31px -1px rgba(0, 0, 0, 0.75); */
+  box-shadow: 6px 10px 10px -1px rgba(0, 0, 0, 0.4);
 }
 .dashboard .bottom .sidesection .notification .notify .head{
   display: flex;
@@ -394,4 +397,76 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.NfTcontainer {
+  background-color: #fff;
+  border-radius: 2rem;
+  min-height: 80vh;
+  width: 80vw;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  flex-direction: row;
+}
+
+.NfTcontainer .text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NfTcontainer .text-center a {
+  text-decoration: none;
+  color: black;
+}
+
+.listing {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  min-height: 100vh;
+
+}
+
+.NfTcontainer .NFTlist {
+  /* width: 40vw; */
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: row;
+}
+
+.NfTcontainer .NFTlist .Nftcard {
+  width: 190px;
+  height: 254px;
+  /* margin: 0 auto; */
+  background-color: #011522;
+  border-radius: 18px;
+  z-index: 1;
+  margin: 1rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+.NfTcontainer .NFTlist .Nftcard a {
+  text-decoration: none;
+  color: #fff;
+  cursor: none;
+}
+
+.NfTcontainer .NFTlist .Nftcard .card-image {
+  width: 150px;
+  height: 120px;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+.button-24{
+  margin: 1rem;
+  padding: 16px 32px;
+  border-radius: 2rem;
+  border: 1px solid var(--Primaryx) ;
+  transition: 0.4s all ease-in-out;
+}
+.button-24:hover{
+  transform: scale(1.1);
 }

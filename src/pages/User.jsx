@@ -8,7 +8,8 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import CardMembershipIcon from '@mui/icons-material/CardMembership';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
-
+import ClearAllIcon from '@mui/icons-material/ClearAll';
+import MintCredentials from './MintCredentials';
 const User = () => {
 
   return (
@@ -34,6 +35,9 @@ const User = () => {
             <li>
               <Link to="credentials"> <CardMembershipIcon/> Credentials</Link>
             </li>
+            <li>
+              <Link to="listcredentials"> <ClearAllIcon /> See Credentials</Link>
+            </li>
             {/* Add more sidebar options here */}
           </ul>
         </div>
@@ -55,7 +59,8 @@ const User = () => {
           <Route path="/" element={<Dashboard />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="timing" element={<Timing />} />
-          <Route path="credentials" element={<Credentials />} />
+          <Route path="credentials" element={<MintCredentials />} />
+          <Route path="listcredentials" element={<Credentials />} />
           {/* Add more nested routes here */}
         </Routes>
       </div>
