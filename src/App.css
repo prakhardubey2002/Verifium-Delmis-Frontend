@@ -387,3 +387,11 @@ html {
   display: flex;
   align-items: center;
 }
+.footer{
+  min-height: 12vh;
+  background-color: var(--Primary);
+  /* color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
