@@ -1,24 +1,25 @@
-
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 
 }
-html{
+
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 
-:root{
+:root {
   --Primary: #d7dfe0;
   --Primaryx: #d9f27e;
-  --Secondary:#fccd3f;
+  --Secondary: #fccd3f;
   --Tertiary: #222222;
   --Quartenary: #ffffff;
 }
-.home{
+
+.home {
   background-color: var(--Primary);
   display: flex;
   justify-content: center;
@@ -29,38 +30,44 @@ html{
   overflow: hidden;
   /* z-index: 999999; */
 }
-.home .left{
+
+.home .left {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  
+
 }
-.home .right{
+
+.home .right {
   width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
   /* overflow: hidden; */
 }
-.home .left h2{
+
+.home .left h2 {
   color: var(--Quartenary);
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
   max-width: 600px;
   font-size: 3rem;
   color: #444;
 }
-.home .left p{
+
+.home .left p {
   color: var(--Quartenary);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   color: #444;
 
 }
-.home .buttonflex{
+
+.home .buttonflex {
   width: 40%;
   display: flex;
   justify-content: space-between;
 }
-.home .left .homebutton{
+
+.home .left .homebutton {
   transition: 0.2s all ease-in-out;
   padding: 16px 32px;
   display: flex;
@@ -74,25 +81,29 @@ html{
   color: var(--Primaryx);
   background-color: #222222;
   border: 3px solid var(--Secondary);
-  
+
 }
-.home .left .homebutton:hover{
+
+.home .left .homebutton:hover {
   background-color: #d7dfe0;
   color: var(--Tertiary);
   border: 3px solid #36a023;
 }
-.home .buttonlink{
+
+.home .buttonlink {
   text-decoration: none;
- 
+
 }
-.user-container{
+
+.user-container {
   min-height: 100vh;
   width: 100vw;
   display: flex;
   background-color: var(--Primary);
   font-family: 'Poppins';
 }
-.user-container .sidebar{
+
+.user-container .sidebar {
   width: 16vw;
   height: 84vh;
   max-width: 20vw;
@@ -104,8 +115,9 @@ html{
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
- 
+
 }
+
 .user-container .sidebar .top .profilebox {
   display: flex;
   flex-direction: column;
@@ -113,19 +125,23 @@ html{
   align-items: center;
   padding: 1rem;
 }
-.user-container .sidebar .top .profilebox .head{
+
+.user-container .sidebar .top .profilebox .head {
   display: flex;
   font-weight: 400;
 }
-.user-container .sidebar .top .profilebox p{
+
+.user-container .sidebar .top .profilebox p {
   font-size: 12px;
   color: #ccc;
 }
-.user-container .sidebar .top .profilebox img{
+
+.user-container .sidebar .top .profilebox img {
   width: 4rem;
   height: 4rem;
   border-radius: 18rem;
 }
+
 .user-container .sidebar ul {
   /* width: 90%; */
   display: flex;
@@ -133,18 +149,19 @@ html{
   justify-content: center;
   align-items: center;
 }
-.user-container .sidebar ul  li{
+
+.user-container .sidebar ul li {
   list-style: none;
-width: 120%;
+  width: 120%;
   border-radius: 2rem;
   margin: 0.2rem 0;
   background-color: var(--Primaryx);
-  
-}
-.user-container .sidebar ul  li:active{
 
 }
-.user-container .sidebar ul  li a{
+
+.user-container .sidebar ul li:active {}
+
+.user-container .sidebar ul li a {
   text-decoration: none;
   color: black;
   display: flex;
@@ -152,7 +169,8 @@ width: 120%;
   padding: 0.5rem 0.5rem;
   align-items: center;
 }
-.user-container .sidebar .bottom .help{
+
+.user-container .sidebar .bottom .help {
   /* width: 90%; */
   background-color: #222222;
   border-radius: 2rem;
@@ -161,36 +179,80 @@ width: 120%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem ;
+  padding: 2rem;
   position: relative;
-  border:2px solid  var(--Primaryx);
+  border: 2px solid var(--Primaryx);
 }
-.user-container .sidebar .bottom .help .iconpos{
+
+.user-container .sidebar .bottom .help .iconpos {
   position: absolute;
   top: -5%;
   color: var(--Primaryx);
   background-color: #222222;
-  border:2px solid  #fff;
+  border: 2px solid #fff;
   border-radius: 2rem;
   transform: scale(1.8);
   /* margin: 1rem; */
 }
-.user-container .sidebar .bottom .help h2{
+
+.user-container .sidebar .bottom .help h2 {
   font-size: 20px;
   font-weight: 400;
 }
-.user-container .sidebar .bottom .help p{
+
+.user-container .sidebar .bottom .help p {
   font-size: 10px;
 }
-.user-container .sidebar .bottom .help button{
+
+.user-container .sidebar .bottom .help button {
   padding: 8px 16px;
   border-radius: 4rem;
   margin: 1rem 0;
   transition: 0.1s all ease-in-out;
 
 }
-.user-container .sidebar .bottom .help button:hover{
+
+.user-container .sidebar .bottom .help button:hover {
   background-color: var(--Primaryx);
   color: #fff;
 
+}
+
+.dashboard {
+  width: 80vw;
+  height: 88vh;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.dashboard .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 20h;
+}
+
+.dashboard .top h2 {
+  width: 90%;
+  font-size: 3.2rem;
+  word-spacing: 4px;
+  font-weight: 400;
+  display: flex;
+
+}
+
+.dashboard .top h2 span {
+  font-size: 3.8rem;
+  color: #fccd3f;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.dashboard .top .radarchart {
+  width: 48%;
+/* transform: scale(0.8); */
+}
+.dashboard .top .useranimation {
+  /* width: 24px; */
+/* transform: scale(0.8); */
 }

@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { PhantomButton } from 'wallet-connect-buttons';
-// import { Navigate } from "react-router-dom";
-// import { Link } from 'react-router-dom'
-import logo from '../assets/logo.png'
+
 import '../css/Components.css'
 import { useGlobalContext } from '../Context/WalletContext';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Lottie from "lottie-react"
 import logox from '../Lottie animation/Navlogo.json'
-import Button from './Button';
+import { redirect } from 'react-router-dom';
 const Navbar = () => {
     const { isAddress, setIsAddress } = useGlobalContext();
     // const [publicKey, setPublicKey] = useState('');
@@ -70,7 +68,8 @@ const Navbar = () => {
 
     const logout=()=>{
         setIsAddress("user")
-        toast("Wallet Logged out")
+        toast("Wallet Logged out");
+        window.location.href = '/';
     }
 
     const toggleVisibility = () => {
