@@ -10,6 +10,8 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import ClearAllIcon from '@mui/icons-material/ClearAll';
 import MintCredentials from './MintCredentials';
+import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption';
+import EncryptCredetials from './EncryptCredetials';
 const User = () => {
 
   return (
@@ -38,6 +40,9 @@ const User = () => {
             <li>
               <Link to="listcredentials"> <ClearAllIcon /> See Credentials</Link>
             </li>
+            <li>
+              <Link to="cryptcredentials"> <EnhancedEncryptionIcon /> Encrypt credentials</Link>
+            </li>
             {/* Add more sidebar options here */}
           </ul>
         </div>
@@ -61,6 +66,7 @@ const User = () => {
           <Route path="timing" element={<Timing />} />
           <Route path="credentials" element={<MintCredentials />} />
           <Route path="listcredentials" element={<Credentials />} />
+          <Route path="cryptcredentials" element={<EncryptCredetials/>} />
           {/* Add more nested routes here */}
         </Routes>
       </div>

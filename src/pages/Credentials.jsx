@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {useGlobalContext} from '../Context/WalletContext'
 import axios from "axios";
+import Lottie from "lottie-react";
+import Ani from '../Lottie animation/load.json'
 const Credentials = () => {
   const navigate = useNavigate();
 const goBack = () => {
@@ -58,6 +60,7 @@ const goBack = () => {
                           <div id="square3"></div>
                           <div id="square4"></div>
                           <div id="square5"></div>
+                          <Lottie className='useranimation' animationData={Ani} loop={true} />
                       </div>
                       }
                       <div className="listing">
