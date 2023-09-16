@@ -7,7 +7,6 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Lottie from "lottie-react"
 import logox from '../Lottie animation/Navlogo.json'
-import { redirect } from 'react-router-dom';
 const Navbar = () => {
     const { isAddress, setIsAddress } = useGlobalContext();
     // const [publicKey, setPublicKey] = useState('');

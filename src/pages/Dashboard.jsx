@@ -10,8 +10,10 @@ import {
 } from 'chart.js';
 import Lottie from "lottie-react";
 import Ani from '../Lottie animation/usertop.json'
-
+import DeleteIcon from '@mui/icons-material/Delete';
 import { Radar } from 'react-chartjs-2';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 ChartJS.register(
   RadialLinearScale,
   PointElement,
@@ -101,7 +103,41 @@ const Dashboard = () => {
         </div>
         <div className="sidesection">
           <div className="notification">
-
+            <h2>Notification</h2>
+              <div className="notify">
+                <div className="head">
+                  <h4>Upcoming Event</h4>
+                  <DeleteIcon/>
+                </div>
+                <br />
+                <div className="down">
+                  <div className='date' >
+                  <CalendarMonthIcon/>
+                  <p>Wed,20 Apr</p>
+                  </ div>
+                  <div className='time' >
+                  <AccessTimeIcon />
+                  <p>11AM - 11:45 AM</p>
+                  </ div>
+                </div>
+              </div>
+              <div className="notify">
+                <div className="head">
+                  <h4>Javascript Seminar</h4>
+                  <DeleteIcon/>
+                </div>
+                <br />
+                <div className="down">
+                  <div className='date' >
+                  <CalendarMonthIcon/>
+                  <p>Wed,20 Apr</p>
+                  </ div>
+                  <div className='time' >
+                  <AccessTimeIcon />
+                  <p>2PM - 4:45 PM</p>
+                  </ div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
