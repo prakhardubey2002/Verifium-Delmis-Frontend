@@ -18,7 +18,27 @@ html {
   --Tertiary: #222222;
   --Quartenary: #ffffff;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--Primary);
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--Secondary);
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Primaryx);
+}
 .home {
   background-color: var(--Primary);
   display: flex;
@@ -105,16 +125,17 @@ html {
 
 .user-container .sidebar {
   width: 16vw;
-  height: 84vh;
+  height: 86vh;
   max-width: 20vw;
   background-color: var(--Quartenary);
-  margin: 1rem 0.5rem;
+  margin: 1rem 0.8rem;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  box-shadow: 6px 10px 31px -1px rgba(0, 0, 0, 0.75);
 
 }
 
@@ -220,10 +241,12 @@ html {
 
 .dashboard {
   width: 80vw;
-  height: 88vh;
+  min-height: 88vh;
   background-color: #fff;
   border-radius: 2rem;
   padding: 2rem;
+  box-shadow: 6px 10px 31px -1px rgba(0, 0, 0, 0.75);
+  margin: 1rem 0rem;
 }
 
 .dashboard .top {
@@ -247,7 +270,8 @@ html {
   color: #fccd3f;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
 }
-.dashboard .top h2 p{
+
+.dashboard .top h2 p {
   font-size: 18px;
   color: #ccc;
   font-family: 200;
@@ -255,9 +279,61 @@ html {
 
 .dashboard .top .radarchart {
   width: 48%;
-/* transform: scale(0.8); */
+  /* transform: scale(0.8); */
 }
+
 .dashboard .top .useranimation {
   /* width: 24px; */
-/* transform: scale(0.8); */
+  /* transform: scale(0.8); */
+}
+
+.dashboard .bottom .todolist {
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #edfcfe;
+  border-radius: 2rem;
+  padding: 1rem;
+  
+}
+
+.dashboard .bottom .todolist .list {
+  display: flex;
+}
+
+.dashboard .bottom .todolist .list .task {
+  display: flex;
+  flex-direction: column;
+  width: 24vw;
+  background-color: black;
+  border-radius: 1.2rem;
+  color: #fff;
+  padding: 1rem;
+  -webkit-box-shadow: 6px 10px 31px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 10px 31px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 10px 31px -1px rgba(0, 0, 0, 0.75);
+  margin: 1rem;
+}
+
+.dashboard .bottom .todolist .list h2 {
+  font-size: 18px;
+  max-width: 80%;
+}
+
+.dashboard .bottom .todolist .list .top {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard .bottom .todolist .list .top button{
+  padding: 8px 16px ;
+  border-radius: 2rem;
+}
+.dashboard .bottom .todolist .list .down button{
+  padding: 10px 12px ;
+  border-radius: 2rem;
+  background-color: #fcfbd8;
+}
+.dashboard .bottom .todolist .list .down {
+  display: flex;
+  justify-content: space-between;
 }

@@ -44,19 +44,66 @@ const Dashboard = () => {
               What do you want
               to <span>Learn </span> Today?
               <p>
-            Invest yourself and take the first step towards achiving your dream
-          </p>
+                Invest yourself and take the first step towards achiving your dream
+              </p>
             </div>
-          <Lottie className='useranimation' animationData={Ani} loop={true} />
+            <Lottie className='useranimation' animationData={Ani} loop={true} />
           </h2>
-          
+
         </div>
         <div className="radarchart">
           <Radar data={data} />
         </div>
       </div>
       <div className="bottom">
+        <div className="todolist">
+          <h2>To do list</h2>
 
+          <div className="list">
+            <div className="task">
+              <div className="top">
+
+                <h2>
+                  Complete assigments by 28 Aug
+                </h2>
+                <button>
+                  High
+                </button>
+              </div>
+              <br />
+              <div className="down">
+                <button>Assigment</button>
+                <p>
+                  David Wilson
+                </p>
+              </div>
+            </div>
+            <div className="task">
+              <div className="top">
+
+                <h2>
+                  Request POAPS to coordianator
+                </h2>
+                <button>
+                  Low
+                </button>
+              </div>
+              <br />
+              <div className="down">
+                <button>Assigment</button>
+                <p>
+                  David Wilson
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div className="sidesection">
+          <div className="notification">
+
+          </div>
+        </div>
       </div>
     </div>
   )
