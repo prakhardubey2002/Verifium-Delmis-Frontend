@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { useEventListener, useHuddle01 } from "@huddle01/react";
 import { Audio, Video } from "@huddle01/react/components";
@@ -25,7 +25,7 @@ const Timing = () => {
 
   const { state, send } = useMeetingMachine();
 
-  const [roomId, setRoomId] = useState("");
+  const [roomId, setRoomId] = useState("lwg-ewhb-vri");
   const [displayNameText, setDisplayNameText] = useState("Guest");
   const [projectId, setProjectId] = useState(
     process.env.NEXT_PUBLIC_PROJECT_ID || ""
@@ -73,6 +73,10 @@ const Timing = () => {
     console.log("lobby:joined");
   });
 
+  useEffect(() => {
+    initialize('2pL_B8B13rvb1l27_tK-ZxWUpRkepEdQ');
+  })
+
   return (
     <div className="gridm grid-cols-2">
       <div>
@@ -83,8 +87,12 @@ const Timing = () => {
           </a>
         </h1> */}
 
-        <h2 className="text-2xl">Room State</h2>
-        <h3 className="break-words">{JSON.stringify(state.value)}</h3>
+        <h2 className="text-2xl" style={{
+          fontWeight: 600
+        }}>Room State</h2>
+        <h3 className="break-words" style={{
+          
+        }}>{JSON.stringify(state.value)}</h3>
 
         {/* <h2 className="text-2xl">Me Id</h2>
         <div className="break-words">
@@ -108,8 +116,8 @@ const Timing = () => {
           {JSON.stringify(state.context.consumers)}
         </div> */}
 
-        <h2 className="text-3xl text-blue-500 font-extrabold">Idle</h2>
-        <input
+        {/* <h2 className="text-3xl text-blue-500 font-extrabold">Idle</h2> */}
+        {/* <input
           type="text"
           placeholder="Your Project Id"
           value={projectId}
@@ -123,7 +131,7 @@ const Timing = () => {
           }}
         >
           INIT
-        </button>
+        </button> */}
 
         <br />
         <br />
@@ -131,7 +139,7 @@ const Timing = () => {
         <input
           type="text"
           placeholder="Your Room Id"
-          value={roomId}
+          value={'lwg-ewhb-vri'}
           onChange={(e) => setRoomId(e.target.value)}
           className="border-2 border-gray-300 h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none mr-2"
         />
@@ -142,6 +150,14 @@ const Timing = () => {
           onChange={(e) => setAccessToken(e.target.value)}
           className="border-2 border-gray-300 h-10 px-5 pr-16 rpnounded-lg text-sm focus:outline-none mr-2"
         /> */}
+        {/* <button
+          disabled={!joinLobby.isCallable}
+          onClick={() => {
+        
+          }}
+        >
+          GET ROOM ID
+        </button> */}
         <button
           disabled={!joinLobby.isCallable}
           onClick={() => {

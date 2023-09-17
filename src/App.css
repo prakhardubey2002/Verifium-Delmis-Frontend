@@ -18,6 +18,7 @@ html {
   --Tertiary: #222222;
   --Quartenary: #ffffff;
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -26,7 +27,7 @@ html {
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--Primary);
-  
+
 }
 
 /* Handle */
@@ -39,6 +40,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--Primaryx);
 }
+
 .home {
   background-color: var(--Primary);
   display: flex;
@@ -122,27 +124,32 @@ html {
   background-color: var(--Primary);
   font-family: 'Poppins';
 }
-.about{
+
+.about {
   min-height: 80vh;
   max-width: 100vw;
   background-color: var(--Primary);
   padding: 1rem;
   display: flex;
 }
-.about .right{
+
+.about .right {
   width: 50vw;
 }
-.about .left{
+
+.about .left {
   width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.about .left h2{
+
+.about .left h2 {
   font-size: 2.8rem;
   font-weight: 400;
 }
+
 .user-container .sidebar {
   width: 16vw;
   height: 86vh;
@@ -314,7 +321,7 @@ html {
   background-color: #edfcfe;
   border-radius: 2rem;
   padding: 1rem;
-  
+
 }
 
 .dashboard .bottom .todolist .list {
@@ -344,31 +351,37 @@ html {
   display: flex;
   justify-content: space-between;
 }
-.dashboard .bottom .todolist .list .top button{
-  padding: 8px 16px ;
+
+.dashboard .bottom .todolist .list .top button {
+  padding: 8px 16px;
   border-radius: 2rem;
 }
-.dashboard .bottom .todolist .list .down button{
-  padding: 10px 12px ;
+
+.dashboard .bottom .todolist .list .down button {
+  padding: 10px 12px;
   border-radius: 2rem;
   background-color: #fcfbd8;
 }
-.dashboard .bottom{
+
+.dashboard .bottom {
   display: flex;
 
 }
-.dashboard .bottom .sidesection{
+
+.dashboard .bottom .sidesection {
   background-color: #edfcfe;
   width: 100%;
   border-radius: 1.2rem;
   padding: 1rem;
   margin: 0 0.5rem;
 }
-.dashboard .bottom .sidesection .notification{
+
+.dashboard .bottom .sidesection .notification {
   display: flex;
   flex-direction: column;
 }
-.dashboard .bottom .sidesection .notification .notify{
+
+.dashboard .bottom .sidesection .notification .notify {
   background-color: #ffffff;
   width: 100%;
   display: flex;
@@ -381,36 +394,43 @@ html {
   /* -moz-box-shadow: 6px 10px 31px -1px rgba(0, 0, 0, 0.75); */
   box-shadow: 6px 10px 10px -1px rgba(0, 0, 0, 0.4);
 }
-.dashboard .bottom .sidesection .notification .notify .head{
+
+.dashboard .bottom .sidesection .notification .notify .head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
 }
-.dashboard .bottom .sidesection .notification .notify .down{
+
+.dashboard .bottom .sidesection .notification .notify .down {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .dashboard .bottom .todolist .list .down {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .dashboard .bottom .sidesection .notification .notify .down {
   display: flex;
   justify-content: space-between;
 }
-.dashboard .bottom .sidesection .notification .notify .down .time{
+
+.dashboard .bottom .sidesection .notification .notify .down .time {
   display: flex;
   align-items: center;
 }
-.dashboard .bottom .sidesection .notification .notify .down .date{
+
+.dashboard .bottom .sidesection .notification .notify .down .date {
   /* width: fit-content; */
   display: flex;
   align-items: center;
 }
-.footer{
+
+.footer {
   min-height: 12vh;
   background-color: var(--Primary);
   /* color: #fff; */
@@ -418,6 +438,7 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 .NfTcontainer {
   background-color: #fff;
   border-radius: 2rem;
@@ -480,40 +501,47 @@ html {
   border-radius: 1rem;
   background-color: #fff;
 }
-.button-24{
+
+.button-24 {
   margin: 1rem;
   padding: 16px 32px;
   border-radius: 2rem;
-  border: 1px solid var(--Primaryx) ;
+  border: 1px solid var(--Primaryx);
   transition: 0.4s all ease-in-out;
 }
-.button-24:hover{
+
+.button-24:hover {
   transform: scale(1.1);
 }
-.loadingspinner{
- width: 100%;
+
+.loadingspinner {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.loadingspinner .useranimation{
+
+.loadingspinner .useranimation {
   max-width: 50vw;
 }
+
 section {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.form{
+
+.form {
   background-color: #fff;
   width: 80vw;
   height: 80vh;
   border-radius: 2rem;
 }
+
 section.contact-us #contact {
   position: relative;
   display: block;
   /* width: 380px; */
-  height:  80vh;
+  height: 80vh;
   background-color: #fff;
   padding: 40px;
   margin-left: auto;
@@ -523,7 +551,7 @@ section.contact-us #contact {
 }
 
 section.contact-us .section-heading {
-  position: relative; 
+  position: relative;
   display: block;
   margin: auto;
 }
@@ -538,7 +566,8 @@ section.contact-us .section-heading {
   margin-bottom: 40px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 350px;
   position: relative;
   display: block;
@@ -556,7 +585,7 @@ input {
   height: 40px;
   padding: 0px 15px;
   width: 100%;
- 
+
 }
 
 
@@ -569,11 +598,13 @@ textarea {
 
 .contact-us span {
   height: 20px;
-	font-size: 12px;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 
-.valid_info_name, .valid_info_email, .valid_info_message{
+.valid_info_name,
+.valid_info_email,
+.valid_info_message {
   display: inline-block;
   font-size: 13px;
   margin: 5px 2px;
@@ -604,8 +635,8 @@ textarea {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%);
   padding: 12px 20px;
   border-radius: 5px;
   border: none;
@@ -624,7 +655,7 @@ textarea {
   cursor: default;
 }
 
-#form-submit:hover:disabled{
+#form-submit:hover:disabled {
   border: 1px solid #9e9e9e;
   color: #9e9e9e;
   background: transparent;
@@ -634,43 +665,48 @@ textarea {
 }
 
 button:active {
-	transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 button:focus {
-	outline: none;
+  outline: none;
 }
 
 button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
+  background-color: transparent;
+  border-color: #FFFFFF;
 }
-.gridm{
+
+.gridm {
   background-color: #fff;
   border-radius: 1.2rem;
   padding: 1rem;
   width: 80vw;
 }
-.gradient-background .container{
+
+.gradient-background .container {
   background-color: #fff;
   width: 80vw;
   min-height: 88vh;
   padding: 1.6rem;
 }
-.gradient-background .container .inputimg::file-selector-button{
+
+.gradient-background .container .inputimg::file-selector-button {
   outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--Primary);
-  padding:8px 16px;
+  padding: 8px 16px;
   border: 1px solid var(--Primaryx);
   border-radius: 2rem;
 }
-.gradient-background .container .table td{
+
+.gradient-background .container .table td {
   margin: 2rem 1rem;
 }
-.key-box{
+
+.key-box {
   transition: 0.2s all ease-in-out;
   padding: 16px 32px;
   display: flex;
