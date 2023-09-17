@@ -52,7 +52,7 @@ const User = () => {
             <h2>Help Center</h2>
             <p>Have a problem</p>
             <p>Send us a Meassage</p>
-            <button>Go to help Center</button>
+            <button >Go to help Center</button>
           </div>
         </div>
       </nav>

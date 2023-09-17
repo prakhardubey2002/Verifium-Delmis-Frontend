@@ -31,7 +31,7 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--Secondary);
+  background: #222222;
   border-radius: 2rem;
 }
 
@@ -122,7 +122,27 @@ html {
   background-color: var(--Primary);
   font-family: 'Poppins';
 }
-
+.about{
+  min-height: 80vh;
+  max-width: 100vw;
+  background-color: var(--Primary);
+  padding: 1rem;
+  display: flex;
+}
+.about .right{
+  width: 50vw;
+}
+.about .left{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.about .left h2{
+  font-size: 2.8rem;
+  font-weight: 400;
+}
 .user-container .sidebar {
   width: 16vw;
   height: 86vh;
@@ -624,4 +644,44 @@ button:focus {
 button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
+}
+.gridm{
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  width: 80vw;
+}
+.gradient-background .container{
+  background-color: #fff;
+  width: 80vw;
+  min-height: 88vh;
+  padding: 1.6rem;
+}
+.gradient-background .container .inputimg::file-selector-button{
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Primary);
+  padding:8px 16px;
+  border: 1px solid var(--Primaryx);
+  border-radius: 2rem;
+}
+.gradient-background .container .table td{
+  margin: 2rem 1rem;
+}
+.key-box{
+  transition: 0.2s all ease-in-out;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  border: 0px;
+  outline: 0px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--Primaryx);
+  background-color: #222222;
+  border: 3px solid var(--Secondary);
 }

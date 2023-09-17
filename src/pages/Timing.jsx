@@ -74,19 +74,19 @@ const Timing = () => {
   });
 
   return (
-    <div className="grid grid-cols-2">
+    <div className="gridm grid-cols-2">
       <div>
-        <h1 className="text-6xl font-bold">
+        {/* <h1 className="text-6xl font-bold">
           Welcome to{" "}
           <a className="text-blue-600" href="https://huddle01.com">
             Huddle01 SDK!
           </a>
-        </h1>
+        </h1> */}
 
         <h2 className="text-2xl">Room State</h2>
         <h3 className="break-words">{JSON.stringify(state.value)}</h3>
 
-        <h2 className="text-2xl">Me Id</h2>
+        {/* <h2 className="text-2xl">Me Id</h2>
         <div className="break-words">
           {JSON.stringify(state.context.peerId)}
         </div>
@@ -95,18 +95,18 @@ const Timing = () => {
           {JSON.stringify(state.context.displayName)}
         </div>
         <h2 className="text-2xl">Recording Data</h2>
-        <div className="break-words">{JSON.stringify(recordingData)}</div>
+        <div className="break-words">{JSON.stringify(recordingData)}</div> */}
 
-        <h2 className="text-2xl">Error</h2>
+        {/* <h2 className="text-2xl">Error</h2>
         <div className="break-words text-red-500">
           {JSON.stringify(state.context.error)}
-        </div>
-        <h2 className="text-2xl">Peers</h2>
+        </div> */}
+        {/* <h2 className="text-2xl">Peers</h2>
         <div className="break-words">{JSON.stringify(peers)}</div>
         <h2 className="text-2xl">Consumers</h2>
         <div className="break-words">
           {JSON.stringify(state.context.consumers)}
-        </div>
+        </div> */}
 
         <h2 className="text-3xl text-blue-500 font-extrabold">Idle</h2>
         <input
@@ -135,13 +135,13 @@ const Timing = () => {
           onChange={(e) => setRoomId(e.target.value)}
           className="border-2 border-gray-300 h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none mr-2"
         />
-        <input
+        {/* <input
           type="text"
           placeholder="Your Access Token (optional)"
           value={accessToken}
           onChange={(e) => setAccessToken(e.target.value)}
           className="border-2 border-gray-300 h-10 px-5 pr-16 rpnounded-lg text-sm focus:outline-none mr-2"
-        />
+        /> */}
         <button
           disabled={!joinLobby.isCallable}
           onClick={() => {
